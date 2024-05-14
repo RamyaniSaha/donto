@@ -282,7 +282,7 @@ nav .toggle i {
   display: flex;
   bottom: 6%;
   top: 55%;
-  left: 24%;
+  left: 28%;
   animation: move-up 1s linear infinite alternate-reverse;
 }
 .container-box .pics .pics1 .ani {
