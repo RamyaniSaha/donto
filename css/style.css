@@ -12,8 +12,13 @@ html {
 
 main {
   width: 100%;
-  height: 140vh !important;
+  height: 140vh;
   background-color: #004caa;
+}
+@media (max-width: 991px) {
+  main {
+    height: 220vh;
+  }
 }
 main header {
   padding-top: 60px;
@@ -39,11 +44,40 @@ nav .box {
   align-items: center;
   padding: 0 10px;
 }
+@media (max-width: 991px) {
+  nav .box {
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 0%;
+  }
+}
 nav .logo img {
   padding-left: 56px;
 }
+@media (max-width: 991px) {
+  nav .menu-box {
+    position: fixed;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    left: 100%;
+    top: 30%;
+    border: 1px solid rgb(192, 79, 104);
+    background-color: rgb(192, 79, 104);
+    z-index: 9999;
+    transition: left 0.2s ease-in-out;
+  }
+}
 nav .menu-box ul {
   padding-right: 60px;
+}
+@media (max-width: 991px) {
+  nav .menu-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 18px;
+  }
 }
 nav .menu-box li {
   display: inline;
@@ -52,9 +86,22 @@ nav .menu-box li {
   font-weight: 600;
   color: #2d68a7;
 }
+@media (max-width: 991px) {
+  nav .menu-box li {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    font-size: 14px;
+  }
+}
 nav .menu-box li:hover {
   color: rgb(235, 99, 121);
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  nav .active {
+    left: 0;
+  }
 }
 nav .dropdown {
   position: relative;
@@ -95,6 +142,11 @@ nav .toggle {
   display: none;
   margin-right: 8%;
 }
+@media (max-width: 991px) {
+  nav .toggle {
+    display: block;
+  }
+}
 nav .toggle i {
   font-size: 28px;
   padding: 20% 24%;
@@ -114,8 +166,18 @@ nav .toggle i {
   border-radius: 0px;
   justify-content: space-around;
 }
+@media (max-width: 991px) {
+  .fixed .box {
+    justify-content: space-between;
+  }
+}
 .fixed .logo img {
   padding-left: 20%;
+}
+@media (max-width: 991px) {
+  .fixed .logo img {
+    padding-left: 36%;
+  }
 }
 .fixed .menu-box ul {
   padding-right: 6px;
@@ -143,6 +205,11 @@ nav .toggle i {
   top: 540px;
   left: 95%;
   animation: slides 50s linear infinite;
+}
+@media (max-width: 991px) {
+  .pic-box .cloud2 img {
+    top: 930px;
+  }
 }
 .pic-box .cloud3 img {
   position: absolute;
@@ -186,6 +253,11 @@ nav .toggle i {
   left: 4%;
   animation: rotation 10s linear infinite;
 }
+@media (max-width: 991px) {
+  .pic-box .plus3 img {
+    top: 830px;
+  }
+}
 .pic-box .plus2 img {
   position: absolute;
   top: 80px;
@@ -211,6 +283,11 @@ nav .toggle i {
   top: 80px;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 991px) {
+  .container-box {
+    flex-wrap: wrap !important;
+  }
 }
 .container-box .text-box1 {
   padding-top: 90px;
@@ -274,8 +351,19 @@ nav .toggle i {
   background-position: bottom;
   justify-content: space-between;
 }
+@media (max-width: 991px) {
+  .container-box .pics {
+    width: 70%;
+    margin-left: 10%;
+  }
+}
 .container-box .pics .tooth {
   padding-left: 10%;
+}
+@media (max-width: 991px) {
+  .container-box .pics .tooth {
+    padding-left: 4%;
+  }
 }
 .container-box .pics .pics1 {
   position: absolute;
@@ -284,6 +372,11 @@ nav .toggle i {
   top: 55%;
   left: 25%;
   animation: move-up 1s linear infinite alternate-reverse;
+}
+@media (max-width: 991px) {
+  .container-box .pics .pics1 {
+    left: 19%;
+  }
 }
 .container-box .pics .pics1 .ani {
   padding-bottom: 10px;
@@ -299,10 +392,21 @@ nav .toggle i {
   padding-top: 10%;
   margin: auto;
 }
+@media (max-width: 991px) {
+  .containers {
+    height: 162vh;
+  }
+}
 .containers .emergency-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .containers .emergency-box {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6%;
+  }
 }
 .containers .emergency-box .e-box1 {
   text-align: center;
@@ -350,6 +454,11 @@ nav .toggle i {
   left: 20px;
   animation: slide-down 4s linear infinite alternate-reverse;
 }
+@media (max-width: 991px) {
+  .welcome-icons .dot {
+    top: 67em;
+  }
+}
 .welcome-icons .circle {
   position: absolute;
   top: 360px;
@@ -363,8 +472,19 @@ nav .toggle i {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-evenly;
 }
+@media (max-width: 991px) {
+  .welcome-family {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .welcome-family .welcome-img {
   position: relative;
+}
+@media (max-width: 991px) {
+  .welcome-family .welcome-img .wel-img1 {
+    width: 50%;
+    margin-left: 28%;
+  }
 }
 .welcome-family .welcome-img .wel-img2 {
   position: absolute;
@@ -372,9 +492,21 @@ nav .toggle i {
   top: 44%;
   animation: move-up 2s linear infinite alternate-reverse;
 }
+@media (max-width: 991px) {
+  .welcome-family .welcome-img .wel-img2 {
+    width: 22%;
+    left: 18%;
+  }
+}
 .welcome-family .welcome-text {
   padding-top: 30px;
   line-height: 60px;
+}
+@media (max-width: 991px) {
+  .welcome-family .welcome-text {
+    padding-top: 70px;
+    padding-left: 10%;
+  }
 }
 .welcome-family .welcome-text .wel-text1 {
   font-size: 46px;
@@ -502,6 +634,11 @@ nav .toggle i {
   padding-left: 10%;
   gap: 20px;
   margin-right: 10%;
+}
+@media (max-width: 991px) {
+  #treatment .treatment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 #treatment .treatment-grid .grid-box1 {
   border: 1px solid #3672bc;
@@ -1464,483 +1601,5 @@ footer .foot-box2 .foot-text2 .foot-txt2:hover {
   }
   100% {
     transform: translateX(20px);
-  }
-}
-@media (max-width: 991px) {
-  main {
-    height: 280vh;
-  }
-  nav .box {
-    width: 100%;
-    justify-content: space-between;
-    border-radius: 0%;
-  }
-  nav .toggle {
-    display: block;
-  }
-  nav .menu-box {
-    position: fixed;
-    width: 80%;
-    height: auto;
-    margin-left: 10%;
-    left: 100%;
-    top: 30%;
-    border: 1px solid rgb(192, 79, 104);
-    background-color: rgb(192, 79, 104);
-    z-index: 9999;
-    transition: left 0.2s ease-in-out;
-  }
-  nav .menu-box ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 18px;
-  }
-  nav .menu-box ul li {
-    color: white;
-    border-bottom: 1px solid white;
-    padding-bottom: 4px;
-    font-size: 14px;
-  }
-  nav .active {
-    left: 0;
-  }
-  nav .fixed nav .box {
-    justify-content: space-between;
-  }
-  nav .fixed nav .logo img {
-    padding-left: 36%;
-  }
-  .container-box {
-    display: flex;
-    flex-wrap: wrap;
-    top: 80px;
-  }
-  .container-box .text-box1 {
-    padding-top: 1px;
-    margin-left: 2%;
-  }
-  .container-box .pics {
-    width: 66%;
-    padding-left: 10%;
-    margin-top: -10%;
-    margin-left: 16%;
-  }
-  .pic-box .plus3 img {
-    top: 700px;
-  }
-  .pic-box .round2 img {
-    top: 140px;
-  }
-  .pic-box .round1 img {
-    top: 256px;
-  }
-  .pic-box .cloud2 img {
-    top: 760px;
-  }
-  .pic-box .round4 img {
-    top: 360px;
-  }
-  .containers {
-    height: 200vh;
-  }
-  .containers .emergency-box {
-    grid-template-columns: repeat(2, 1fr);
-    height: 190vh;
-    margin: 0 -6%;
-    row-gap: 2%;
-  }
-  .welcome-family {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .wel-box {
-    width: 98%;
-  }
-  .welcome-img {
-    padding-left: 20%;
-  }
-  .welcome-text {
-    padding-top: 10%;
-    padding-left: 8%;
-  }
-  .welcome-box {
-    height: 80vh;
-  }
-  #treatment {
-    height: auto;
-  }
-  #treatment .treatment-box {
-    height: 360vh;
-  }
-  .treatment-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: -6%;
-  }
-  #dentist {
-    padding-top: 18%;
-    height: auto;
-  }
-  #dentist .dentists {
-    margin-left: 38%;
-  }
-  #dentist .dentist-picture {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 38px;
-    margin-top: 18%;
-  }
-  #appointment {
-    margin-top: 14%;
-  }
-  #appointment .appointments {
-    margin-left: 6%;
-  }
-  #appointment .appointment-form {
-    width: 100%;
-    margin-top: 4%;
-  }
-  #appointment .appointment-form .appo {
-    width: 90%;
-    margin: 0 6%;
-    -moz-column-gap: 20%;
-         column-gap: 20%;
-  }
-  #appointment .appointment-form form input {
-    padding: 6% 20px;
-    height: 40px;
-    width: 130%;
-  }
-  #appointment .appointment-form form textarea {
-    width: 290%;
-  }
-  #appointment .appointment-form .appo-submit {
-    margin-top: 46%;
-  }
-  #gallery {
-    height: 250vh;
-  }
-  #gallery .gallery-picbox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #gallery .gallery-picbox .gallery-pic4 {
-    width: 100%;
-  }
-  #gallery .gallery-picbox .gallery-pic5 {
-    margin-left: 0%;
-  }
-  .item {
-    width: 100%;
-  }
-  .item .testi-img1 {
-    width: 122%;
-    height: 66vh;
-  }
-  .item .testi-img {
-    width: 106%;
-    height: 66vh;
-  }
-  .item .testimony-txt {
-    margin-left: 2%;
-  }
-  .item .testimony-txt1 {
-    margin-left: 2%;
-    margin-right: 30%;
-  }
-  .item .testimony-txt3 {
-    margin-left: -4%;
-    margin-right: 30%;
-  }
-  .owl-nav {
-    width: 10%;
-    top: 58%;
-    left: 56%;
-  }
-  .blog-card {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 4%;
-  }
-  .card-box3 {
-    margin-bottom: 26%;
-  }
-  .request-appointment {
-    height: 240vh;
-  }
-  .re-appo {
-    height: 220vh;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .re-appotext {
-    text-align: center;
-  }
-  .re-appopics {
-    margin-top: -10%;
-    margin: 0 8%;
-    padding: 0 -60em;
-    width: 90%;
-    height: 108vh;
-  }
-  .appo-pics1 {
-    left: 20%;
-  }
-  .re-appobtn {
-    position: relative;
-    left: 16%;
-    margin: 10% 30%;
-  }
-  .foot-box {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8%;
-  }
-}
-@media (max-width: 770px) {
-  main {
-    width: 100%;
-    height: 130vh;
-  }
-  .containers {
-    height: 100vh;
-  }
-  .containers .emergency-box {
-    height: auto;
-    row-gap: 4%;
-  }
-  .welcome-box {
-    height: auto;
-  }
-  .treatment-box {
-    height: 180vh;
-  }
-  .appo-submit {
-    margin-top: 56%;
-  }
-  .item .testi-img1 {
-    width: 106%;
-    height: 41vh;
-  }
-  .item .testi-img {
-    width: 100%;
-    height: 40vh;
-  }
-  .blog-text {
-    width: 74%;
-    margin-left: 16%;
-  }
-  .request-appointment {
-    height: 190vh;
-  }
-  .re-appotext {
-    margin-left: -12%;
-  }
-  .re-appopics {
-    margin-top: -36%;
-    width: auto;
-    height: 81vh;
-  }
-  .re-appobtn {
-    margin: 10% 20%;
-  }
-}
-@media (max-width: 560px) {
-  main {
-    height: 160vh;
-  }
-  .text-box1 {
-    padding-left: 20%;
-  }
-  .text-box1 h1 {
-    line-height: 80%;
-  }
-  .text-box1 p {
-    padding-right: 10%;
-  }
-  .pics {
-    left: -12%;
-  }
-  .pics .pics1 {
-    left: 30%;
-  }
-  .pics .pics1 .ani1 {
-    padding-left: 40%;
-  }
-  .containers {
-    height: 160vh;
-  }
-  .containers .emergency-box {
-    grid-template-columns: repeat(1, 1fr);
-    height: 100vh;
-  }
-  .welcome {
-    height: 170vh;
-  }
-  .welcome-img .wel-img1 {
-    width: 80%;
-  }
-  .welcome-img .wel-img2 {
-    width: 28%;
-  }
-  .welcome-text .wel-text2 {
-    padding-right: 6%;
-  }
-  #treatment {
-    width: 100%;
-  }
-  #treatment .treatment-box {
-    height: 360vh;
-  }
-  #treatment .treatment-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  #treatment .treatment-grid .grid-box1 {
-    text-align: center;
-    margin-right: -4%;
-  }
-  .dentist-picture {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  #appointment .appointment-form {
-    width: 90%;
-  }
-  form textarea {
-    width: 200%;
-  }
-  .appo-submit {
-    margin-left: 2%;
-    margin-top: 8%;
-  }
-  #gallery {
-    height: 340vh;
-  }
-  #gallery .gallery-picbox {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .testimonial {
-    text-align: center;
-  }
-  .testimonial .item {
-    height: 84vh;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .testimonial .item .testi-img1 {
-    width: 40%;
-    height: 36vh;
-    margin-left: 20%;
-  }
-  .testimonial .item .testi-img {
-    width: 40%;
-    height: 36vh;
-    margin-left: 20%;
-  }
-  .testimonial .item .testi-text {
-    margin-left: -14%;
-  }
-  .testimonial .item .texti-t {
-    margin-left: -14%;
-  }
-  .testimonial .textbox {
-    margin-top: -38%;
-    margin-left: 10%;
-  }
-  .testimonial .textbox .testimony-txt {
-    margin-left: -4%;
-  }
-  .testimonial .textbox .testimony-txt1 {
-    margin-left: -4%;
-  }
-  .blog-card {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .request-appointment {
-    height: 140vh;
-  }
-  .request-appointment .re-appo {
-    height: 160vh;
-  }
-  .request-appointment .re-appo .re-appopics {
-    width: auto;
-    height: 38vh;
-  }
-  .request-appointment .re-appo .re-appobtn {
-    margin: 10% 14%;
-  }
-  .foot-box {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2%;
-  }
-  .foot-box2 {
-    margin-top: 22%;
-  }
-}
-@media (max-width: 460px) {
-  main {
-    height: auto;
-  }
-  .pics {
-    left: -2%;
-  }
-  .pics .tooth {
-    width: 100%;
-  }
-  .pics .pics1 {
-    left: 22%;
-    width: 90%;
-  }
-  .pics .pics1 .ani1 {
-    padding-left: 0%;
-    width: 90%;
-  }
-  .bttn .btn1 {
-    margin-top: 10%;
-  }
-  .welcome-box .wel-box2 .welbox-text22 {
-    padding-left: 10px;
-  }
-  #treatment .treatment-grid {
-    margin-right: 2em;
-  }
-  #treatment .grid-icon1 {
-    right: 5%;
-  }
-  .dentist-text {
-    margin-left: -12%;
-  }
-  .dentist-picture {
-    padding-left: 14%;
-  }
-  .request-appointment {
-    height: 100vh;
-  }
-  .request-appointment .re-appo {
-    height: 110vh;
-  }
-  .request-appointment .re-appo .re-appopics {
-    width: auto;
-    height: 20vh;
-  }
-  .request-appointment .re-appo .re-appopics .appo-pics1 {
-    width: 64%;
-  }
-  #appointment form textarea {
-    width: 160%;
-  }
-}
-@media (max-height: 660px) {
-  main {
-    height: 180vh;
-  }
-  .request-appointment {
-    height: 120vh;
-  }
-  .request-appointment .re-appo {
-    height: 140vh;
-  }
-}
-@media (max-height: 960px) {
-  .gallery-pic4 {
-    width: 204%;
-  }
-  .gallery-pic5 {
-    margin-left: 46em;
   }
 }/*# sourceMappingURL=style.css.map */
