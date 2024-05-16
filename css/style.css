@@ -25,7 +25,7 @@ main {
     height: 140vh;
   }
 }
-@media (min-height: 740px) and (max-height: 850px) {
+@media (min-height: 730px) and (max-height: 850px) {
   main {
     height: 180vh;
   }
@@ -559,7 +559,7 @@ nav .toggle i {
     height: 100vh;
   }
 }
-@media (min-height: 740px) and (max-height: 850px) {
+@media (min-height: 730px) and (max-height: 850px) {
   .welcome {
     height: 140vh !important;
   }
@@ -1534,7 +1534,7 @@ nav .toggle i {
     height: 80vh;
   }
 }
-@media (min-height: 740px) and (max-height: 850px) {
+@media (min-height: 730px) and (max-height: 850px) {
   .testimonial {
     height: 108vh;
   }
