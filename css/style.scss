@@ -777,17 +777,12 @@ nav{
             height: 380vh !important;
         }
         @include breakpoint(tablet){
-            height: 190vh !important;
+            height: 190vh;
         }
         @include breakpoint(small){
             height: 400vh !important;
         }
-        @include breakpoint (mobile){
-            height: 320vh !important;
-        }
-        @include breakpoint(mobilesm){
-            height: 376vh !important;
-        }
+     
         .treatment-text{
             padding-top: 88px;
             font-size: 40px;
