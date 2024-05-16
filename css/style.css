@@ -17,7 +17,7 @@ main {
 }
 @media (max-width: 991px) {
   main {
-    height: 220vh;
+    height: 240vh;
   }
 }
 @media (max-width: 770px) {
@@ -170,7 +170,7 @@ nav .toggle i {
 @media (max-width: 991px) {
   .fixed {
     top: -10%;
-    margin-top: 6%;
+    margin-top: 4%;
     transition: 1s ease-in;
   }
 }
@@ -736,7 +736,7 @@ nav .toggle i {
 }
 @media (max-width: 991px) {
   #treatment .treatment-box {
-    height: 290vh;
+    height: 340vh;
   }
 }
 @media (max-width: 770px) {
@@ -1890,7 +1890,7 @@ nav .toggle i {
 @media (max-width: 991px) {
   .request-appointment {
     margin-top: 2%;
-    height: 180vh;
+    height: 220vh;
   }
 }
 @media (max-width: 770px) {
@@ -2018,8 +2018,8 @@ nav .toggle i {
 @media (max-width: 991px) {
   .request-appointment .re-appo .re-appopics {
     width: 72vw;
-    height: 80vh;
-    margin: 0 16%;
+    height: 94vh;
+    margin: 6% 16%;
   }
 }
 @media (max-width: 770px) {

@@ -49,7 +49,7 @@ main{
   background-color: #004caa;
 
   @include breakpoint(medium){
-        height: 220vh;
+        height: 240vh;
    }
    @include breakpoint(tablet){
      height: 140vh;
@@ -200,7 +200,7 @@ nav{
 
     @include breakpoint(medium){
         top: -10%;
-        margin-top: 6%;
+        margin-top: 4%;
         transition: 1s ease-in;
     }
     @include breakpoint(tablet){
@@ -761,7 +761,7 @@ nav{
         position: relative;
 
         @include breakpoint(medium){
-            height: 290vh;
+            height: 340vh;
         }
         @include breakpoint(tablet){
             height: 190vh;
@@ -1882,7 +1882,7 @@ nav{
 
     @include breakpoint(medium){
        margin-top: 2%;
-       height: 180vh;
+       height: 220vh;
     }
     @include breakpoint(tablet){
         margin-top: 2%;
@@ -1999,8 +1999,8 @@ nav{
 
            @include breakpoint(medium){
             width: 72vw;
-            height: 80vh;
-            margin: 0 16%;
+            height: 94vh;
+            margin: 6% 16%;
           }
            @include breakpoint(tablet){
             width: 62vw;
