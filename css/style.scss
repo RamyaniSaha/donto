@@ -49,7 +49,7 @@ main{
   background-color: #004caa;
 
   @include breakpoint(medium){
-        height: 280vh;
+        height: 280vh !important;
    }
    @include breakpoint(tablet){
      height: 140vh;
@@ -956,7 +956,7 @@ nav{
         margin-top: 18%;
     }
     @include breakpoint (mobile){
-        margin-top: 24%;
+        margin-top: 10em;
     }
 
 
