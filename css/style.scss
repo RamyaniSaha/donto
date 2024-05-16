@@ -52,7 +52,7 @@ main{
         height: 280vh !important;
    }
    @include breakpoint(tablet){
-     height: 140vh;
+     height: 140vh !important;
    }
 
    header{
