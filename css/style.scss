@@ -783,10 +783,13 @@ nav{
             height: 360vh !important;
         }
         @include breakpoint (mobile){
-            height: 320vh;
+            height: 320vh !important;
         }
         @include breakpoint(mobilesm){
-            height: 376vh;
+            height: 376vh !important;
+        }
+        @include breakpoint(webheight1){
+            height: 428vh !important;
         }
         .treatment-text{
             padding-top: 88px;
