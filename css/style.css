@@ -756,7 +756,7 @@ nav .toggle i {
 }
 @media (min-width: 310px) and (max-width: 426px) {
   #treatment .treatment-box {
-    height: 366vh;
+    height: 376vh;
   }
 }
 #treatment .treatment-box .treatment-text {
