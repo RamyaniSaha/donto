@@ -767,12 +767,12 @@ nav{
     padding-top: 10%;
 
     .treatment-box{
-        height: 320vh !important;
+        height: 260vh !important;
         background-color: #004caa;
         position: relative;
 
         @include breakpoint(medium){
-            height: 340vh !important;
+            height: 380vh !important;
         }
         @include breakpoint(tablet){
             height: 190vh !important;
