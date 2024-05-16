@@ -2134,7 +2134,7 @@ footer .foot-box {
 }
 @media (min-height: 740px) and (max-height: 850px) {
   footer .foot-box {
-    height: 140vh;
+    height: 160vh !important;
   }
 }
 footer .foot-box .foot-box1 {
