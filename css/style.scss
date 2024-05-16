@@ -9,7 +9,7 @@
 
 @mixin breakpoint($point){
     @if $point ==medium{
-        @media (max-width: 991px){
+        @media (max-width: 1025px){
             @content;
         }
     }
