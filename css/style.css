@@ -937,6 +937,11 @@ nav .toggle i {
     margin-top: 18%;
   }
 }
+@media (max-width: 450px) {
+  #dentist .dentist-picture {
+    margin-top: 24%;
+  }
+}
 #dentist .dentist-picture .serve1 {
   width: auto;
   top: 40%;

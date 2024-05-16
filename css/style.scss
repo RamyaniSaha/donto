@@ -955,6 +955,10 @@ nav{
     @include breakpoint (mobile){
         margin-top: 18%;
     }
+    @include breakpoint (mobile){
+        margin-top: 24%;
+    }
+
 
     .serve1{
         width: auto;
