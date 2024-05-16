@@ -37,6 +37,17 @@
           @content;
         }
     }
+    @else if $point ==webheight{
+        @media (max-height: 860px){
+            @content;
+        }
+    }
+
+    @else if $point ==webheight1{
+        @media (min-height:740px) and (max-height: 850px){
+            @content;
+        }
+    }
 }
 
 html{
@@ -761,7 +772,7 @@ nav{
         position: relative;
 
         @include breakpoint(medium){
-            height: 340vh !important;
+            height: 340vh;
         }
         @include breakpoint(tablet){
             height: 190vh;
@@ -774,6 +785,9 @@ nav{
         }
         @include breakpoint(mobilesm){
             height: 366vh;
+        }
+        @include breakpoint(webheight){
+            height: 360px;
         }
         .treatment-text{
             padding-top: 88px;

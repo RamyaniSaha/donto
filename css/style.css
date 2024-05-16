@@ -736,7 +736,7 @@ nav .toggle i {
 }
 @media (max-width: 1025px) {
   #treatment .treatment-box {
-    height: 340vh !important;
+    height: 340vh;
   }
 }
 @media (max-width: 770px) {
@@ -757,6 +757,11 @@ nav .toggle i {
 @media (min-width: 310px) and (max-width: 426px) {
   #treatment .treatment-box {
     height: 366vh;
+  }
+}
+@media (max-height: 860px) {
+  #treatment .treatment-box {
+    height: 360px;
   }
 }
 #treatment .treatment-box .treatment-text {
