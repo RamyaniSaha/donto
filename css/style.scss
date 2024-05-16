@@ -2097,10 +2097,7 @@ footer{
             row-gap: 2%;
         }
         @include breakpoint(small){
-            height: 120vh;
-        }
-        @include breakpoint(webheight1){
-            height: 160vh !important;
+            height: 140vh;
         }
         .foot-box1{
             color: white;
