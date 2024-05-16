@@ -2132,6 +2132,11 @@ footer .foot-box {
     height: 120vh;
   }
 }
+@media (min-height: 740px) and (max-height: 850px) {
+  footer .foot-box {
+    height: 140vh;
+  }
+}
 footer .foot-box .foot-box1 {
   color: white;
 }

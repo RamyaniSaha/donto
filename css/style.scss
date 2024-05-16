@@ -2099,6 +2099,9 @@ footer{
         @include breakpoint(small){
             height: 120vh;
         }
+        @include breakpoint(webheight1){
+            height: 140vh;
+        }
         .foot-box1{
             color: white;
 
