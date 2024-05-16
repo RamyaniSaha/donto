@@ -726,7 +726,7 @@ nav .toggle i {
 
 #treatment {
   width: 100%;
-  height: 240vh;
+  height: auto;
   padding-top: 10%;
 }
 #treatment .treatment-box {
