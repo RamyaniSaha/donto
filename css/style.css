@@ -759,6 +759,11 @@ nav .toggle i {
     height: 400vh !important;
   }
 }
+@media (min-width: 310px) and (max-width: 426px) {
+  #treatment .treatment-box {
+    height: 406vh;
+  }
+}
 #treatment .treatment-box .treatment-text {
   padding-top: 88px;
   font-size: 40px;

@@ -782,7 +782,9 @@ nav{
         @include breakpoint(small){
             height: 400vh !important;
         }
-     
+        @include breakpoint(mobilesm){
+            height: 406vh;
+        }
         .treatment-text{
             padding-top: 88px;
             font-size: 40px;
