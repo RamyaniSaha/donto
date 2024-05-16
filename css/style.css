@@ -25,6 +25,11 @@ main {
     height: 140vh;
   }
 }
+@media (min-height: 740px) and (max-height: 850px) {
+  main {
+    height: 210vh;
+  }
+}
 main header {
   padding-top: 60px;
   width: 100%;

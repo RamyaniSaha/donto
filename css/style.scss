@@ -60,6 +60,9 @@ main{
    @include breakpoint(tablet){
      height: 140vh;
    }
+   @include breakpoint(webheight1){
+    height: 210vh;
+   }
 
    header{
       padding-top: 60px;
