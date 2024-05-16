@@ -27,7 +27,7 @@ main {
 }
 @media (min-height: 740px) and (max-height: 850px) {
   main {
-    height: 210vh;
+    height: 180vh;
   }
 }
 main header {
@@ -557,6 +557,11 @@ nav .toggle i {
 @media (min-width: 310px) and (max-width: 426px) {
   .welcome {
     height: 100vh;
+  }
+}
+@media (min-height: 740px) and (max-height: 850px) {
+  .welcome {
+    height: 180vh;
   }
 }
 

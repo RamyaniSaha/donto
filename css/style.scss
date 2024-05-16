@@ -61,7 +61,7 @@ main{
      height: 140vh;
    }
    @include breakpoint(webheight1){
-    height: 210vh;
+    height: 180vh;
    }
 
    header{
@@ -585,6 +585,10 @@ nav{
     @include breakpoint(mobilesm){
         height: 100vh;
     }
+    @include breakpoint(webheight1){
+        height: 180vh;
+    }
+    
 }
 
 .welcome-icons{
