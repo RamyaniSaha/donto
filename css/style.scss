@@ -771,9 +771,7 @@ nav{
         background-color: #004caa;
         position: relative;
 
-        @include breakpoint(medium){
-            height: 380vh !important;
-        }
+       
         @include breakpoint(tablet){
             height: 190vh !important;
         }

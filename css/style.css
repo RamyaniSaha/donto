@@ -734,11 +734,6 @@ nav .toggle i {
   background-color: #004caa;
   position: relative;
 }
-@media (max-width: 1025px) {
-  #treatment .treatment-box {
-    height: 380vh !important;
-  }
-}
 @media (max-width: 770px) {
   #treatment .treatment-box {
     height: 190vh !important;
