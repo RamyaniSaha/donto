@@ -586,7 +586,7 @@ nav{
         height: 100vh;
     }
     @include breakpoint(webheight1){
-        height: 180vh;
+        height: 140vh !important;
     }
     
 }
