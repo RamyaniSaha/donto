@@ -767,7 +767,7 @@ nav{
     padding-top: 10%;
 
     .treatment-box{
-        height: 240vh !important;
+        height: 140vh;
         background-color: #004caa;
         position: relative;
 
@@ -786,7 +786,6 @@ nav{
         @include breakpoint(mobilesm){
             height: 366vh;
         }
-       
         .treatment-text{
             padding-top: 88px;
             font-size: 40px;
