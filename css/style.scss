@@ -49,7 +49,7 @@ main{
   background-color: #004caa;
 
   @include breakpoint(medium){
-        height: 240vh;
+        height: 280vh;
    }
    @include breakpoint(tablet){
      height: 140vh;
