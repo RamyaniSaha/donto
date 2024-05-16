@@ -12,17 +12,17 @@ html {
 
 main {
   width: 100%;
-  height: 140vh;
+  height: 160vh;
   background-color: #004caa;
 }
 @media (max-width: 1025px) {
   main {
-    height: 280vh !important;
+    height: 280vh;
   }
 }
 @media (max-width: 770px) {
   main {
-    height: 140vh !important;
+    height: 140vh;
   }
 }
 main header {
@@ -939,7 +939,7 @@ nav .toggle i {
 }
 @media (max-width: 450px) {
   #dentist .dentist-picture {
-    margin-top: 10em;
+    margin-top: 12em;
   }
 }
 #dentist .dentist-picture .serve1 {
