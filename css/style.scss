@@ -21,19 +21,19 @@
     }
 
     @else if $point ==small{
-        @media (min-width: 550px) and (max-width: 769px){
+        @media (max-width: 550px){
           @content;
         }
     }
 
     @else if $point ==mobile{
-        @media (min-width: 450px) and (max-width: 549px){
+        @media (max-width: 450px){
           @content;
         }
     }
      
     @else if $point ==mobilesm{
-        @media (min-width: 320px) and (max-width: 449px){
+        @media (min-width: 310px) and (max-width: 426px){
           @content;
         }
     }
@@ -373,7 +373,6 @@ nav{
            
             .bttn{
                 padding-top: 50px;
-
                 .btn{
                     padding: 14px 32px;
                     margin-right: 4% ;
@@ -400,6 +399,10 @@ nav{
                     color: white;
                     font-size: 18px;
                     transition: .4s;
+
+                    @include breakpoint(mobilesm){
+                       margin-top: 10%;
+                    }
                 }
 
                 .btn1:hover{
@@ -428,6 +431,9 @@ nav{
           width: 90%;
             margin-left: 4%;
         }
+        @include breakpoint (mobile){
+            width: 80%;
+        }
 
 
         .tooth{
@@ -439,7 +445,11 @@ nav{
            @include breakpoint(small){
              padding-left: 0;
            }
-         
+           @include breakpoint (mobile){
+              width: 86%;
+              padding-left: 8%;
+            }
+
         }
         .pics1{
             position: absolute;
@@ -455,20 +465,33 @@ nav{
             @include breakpoint(small){
                 left: 18%;
             }
-
+            @include breakpoint (mobile){
+                left: 19%;
+            }
             .ani{
                 padding-bottom: 10px;
+
+                @include breakpoint (mobile){
+                    width: 80%;
+                }
+        
             }
 
             .ani1{
                 padding-top: 30px ;
                 padding-left: 30px;
+
+                @include breakpoint (mobile){
+                    width: 80%;
+                    padding-left: 0;
+                }
             }
         }
         
 
     }     
 }
+
 
 .containers{
     width: 80%;
@@ -485,7 +508,12 @@ nav{
     @include breakpoint(small){
         height: 120vh;
     }
-        
+   @include breakpoint (mobile){
+      height: 140vh;
+    }
+    @include breakpoint(mobilesm){
+        height: 150vh;
+    }
     .emergency-box{
        display: grid;
        grid-template-columns: repeat(3,1fr);
@@ -504,6 +532,7 @@ nav{
          grid-template-columns: repeat(1,1fr);
          row-gap: 6%;
        }
+       
        
        
        .e-box1{
@@ -540,6 +569,13 @@ nav{
     height: auto;
     padding-top: 80px;
     margin: auto;
+
+    @include breakpoint (mobile){
+        height: 140vh;
+    }
+    @include breakpoint(mobilesm){
+        height: 100vh;
+    }
 }
 
 .welcome-icons{
@@ -559,7 +595,14 @@ nav{
 
         @include breakpoint(medium){
             top: 67em;  
-         }
+        }
+        @include breakpoint (mobile){
+            top: 72em;
+        }
+
+        @include breakpoint(mobilesm){
+            top: 50em;
+        }
  
     }
 
@@ -579,6 +622,11 @@ nav{
     @include breakpoint(medium){
         grid-template-columns: repeat(1,1fr);
     }
+    @include breakpoint(mobile){
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 6%;
+    }
+       
 
     .welcome-img{
         position: relative;
@@ -662,6 +710,9 @@ nav{
             padding-top: 38px;
             justify-content: space-between;
             
+            @include breakpoint(mobilesm){
+              visibility: hidden;
+            }
 
             .wel-box1{
                 padding-top: 20px;
@@ -718,7 +769,12 @@ nav{
         @include breakpoint(small){
             height: 290vh;
         }
-
+        @include breakpoint (mobile){
+            height: 320vh;
+        }
+        @include breakpoint(mobilesm){
+            height: 366vh;
+        }
         .treatment-text{
             padding-top: 88px;
             font-size: 40px;
@@ -874,7 +930,10 @@ nav{
         text-align: center;
         margin: auto;
 
-        
+        @include breakpoint (mobile){
+            margin-left: -10%;
+        }
+    
     }
  .dentist-picture{
     width: 90%;
@@ -893,7 +952,9 @@ nav{
     @include breakpoint(small){
         grid-template-columns: repeat(1,1fr);
     }
-
+    @include breakpoint (mobile){
+        margin-top: 18%;
+    }
 
     .serve1{
         width: auto;
@@ -1027,7 +1088,10 @@ nav{
 
         @include breakpoint(tablet){
             width: 160%;
-         }
+        }
+         @include breakpoint(mobilesm){
+           width: 150%;
+        }
       }
       form textarea{
         margin-top: 14%;
@@ -1050,6 +1114,9 @@ nav{
 
         @include breakpoint(small){
             width: 162%;
+        }
+        @include breakpoint(mobilesm){
+           width: 150%;
         }
     
       }
@@ -1079,6 +1146,14 @@ nav{
         @include breakpoint(small){
             margin-top: 84%;
             margin-left: -16.8em;
+        }
+        @include breakpoint (mobile){
+            margin-top: 98%;
+            margin-left: -15.8em;
+        }
+        @include breakpoint(mobilesm){
+            margin-top: 136%;
+            margin-left: -15em;
         }
       }
       .appo-submit:hover{
@@ -1458,6 +1533,10 @@ nav{
     margin-top: 8%;
     width: 100%;
 
+    @include breakpoint(mobilesm){
+        height: 80vh;
+    }
+
     .test{
         font-size: 46px;
         padding-left: 10%;
@@ -1533,6 +1612,9 @@ nav{
                 width: 50%;
                 margin-left: 24%;
             }
+            @include breakpoint(mobilesm){
+               height: 16vh;
+            }
         }
         .testi-img{
             width: 110%;
@@ -1552,6 +1634,9 @@ nav{
             @include breakpoint(small){
                 width: 50%;
                 margin-left: 24%;
+            }
+            @include breakpoint(mobilesm){
+                height: 16vh;
             }
         }
         .testi-text{
@@ -1625,14 +1710,17 @@ nav{
             top: 80%;
             left: 46%;
         }
-        @include breakpoint(medium){
+        @include breakpoint(tablet){
             left: 39%;
         }
         @include breakpoint(small){
             top: 34em;
             left: 40%;
         }
-
+        @include breakpoint(mobile){
+            width: 16%;
+            top: 36em;
+        }
     }
     .owl-nav span{
         font-size: 38px;
@@ -1664,7 +1752,7 @@ nav{
             grid-template-columns: repeat(2,1fr);
             row-gap: 48px;
         }
-        @include breakpoint(small){
+        @include breakpoint(tablet){
             margin-bottom: 20%;
         }
         @include breakpoint(small){
@@ -1887,7 +1975,12 @@ nav{
             @include breakpoint(small){
                 margin-left: 34%;
             }
-
+            @include breakpoint(mobile){
+                margin-left: 30%;
+            }
+            @include breakpoint(mobilesm){
+                margin-left: 26%;
+            }
             &:hover{
                 background-color: white;
                 color: black;
@@ -1916,7 +2009,7 @@ nav{
             }
             @include breakpoint(small){
                 width: 84vw;
-                height: 33vh;
+                height: 34vh;
                 margin-top: 20%;
              }
 
@@ -1931,6 +2024,9 @@ nav{
              @include breakpoint(small){
                 height: 36vh;
              }
+             @include breakpoint(mobilesm){
+               height: 28vh;
+            }
            }
         }
     }
@@ -1976,11 +2072,13 @@ footer{
             grid-template-columns: repeat(2, 1fr);
             row-gap: 10%;
         }
-        @include breakpoint(medium){
+        @include breakpoint(tablet){
             grid-template-columns: repeat(1, 1fr);
             row-gap: 2%;
         }
-
+        @include breakpoint(small){
+            height: 120vh;
+        }
         .foot-box1{
             color: white;
 

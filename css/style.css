@@ -359,6 +359,11 @@ nav .toggle i {
   font-size: 18px;
   transition: 0.4s;
 }
+@media (min-width: 310px) and (max-width: 426px) {
+  .container-box .text-box1 .bttn .btn1 {
+    margin-top: 10%;
+  }
+}
 .container-box .text-box1 .bttn .btn1:hover {
   background-color: rgb(223, 81, 105);
   border: 1px solid rgb(223, 81, 105);
@@ -381,10 +386,15 @@ nav .toggle i {
     margin-left: 10%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .container-box .pics {
     width: 90%;
     margin-left: 4%;
+  }
+}
+@media (max-width: 450px) {
+  .container-box .pics {
+    width: 80%;
   }
 }
 .container-box .pics .tooth {
@@ -395,9 +405,15 @@ nav .toggle i {
     padding-left: 4%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .container-box .pics .tooth {
     padding-left: 0;
+  }
+}
+@media (max-width: 450px) {
+  .container-box .pics .tooth {
+    width: 86%;
+    padding-left: 8%;
   }
 }
 .container-box .pics .pics1 {
@@ -413,17 +429,33 @@ nav .toggle i {
     left: 19%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .container-box .pics .pics1 {
     left: 18%;
+  }
+}
+@media (max-width: 450px) {
+  .container-box .pics .pics1 {
+    left: 19%;
   }
 }
 .container-box .pics .pics1 .ani {
   padding-bottom: 10px;
 }
+@media (max-width: 450px) {
+  .container-box .pics .pics1 .ani {
+    width: 80%;
+  }
+}
 .container-box .pics .pics1 .ani1 {
   padding-top: 30px;
   padding-left: 30px;
+}
+@media (max-width: 450px) {
+  .container-box .pics .pics1 .ani1 {
+    width: 80%;
+    padding-left: 0;
+  }
 }
 
 .containers {
@@ -442,9 +474,19 @@ nav .toggle i {
     height: 100vh;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .containers {
     height: 120vh;
+  }
+}
+@media (max-width: 450px) {
+  .containers {
+    height: 140vh;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  .containers {
+    height: 150vh;
   }
 }
 .containers .emergency-box {
@@ -465,7 +507,7 @@ nav .toggle i {
     row-gap: 4%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .containers .emergency-box {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 6%;
@@ -502,6 +544,16 @@ nav .toggle i {
   padding-top: 80px;
   margin: auto;
 }
+@media (max-width: 450px) {
+  .welcome {
+    height: 140vh;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  .welcome {
+    height: 100vh;
+  }
+}
 
 .welcome-icons {
   position: relative;
@@ -522,6 +574,16 @@ nav .toggle i {
     top: 67em;
   }
 }
+@media (max-width: 450px) {
+  .welcome-icons .dot {
+    top: 72em;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  .welcome-icons .dot {
+    top: 50em;
+  }
+}
 .welcome-icons .circle {
   position: absolute;
   top: 360px;
@@ -540,6 +602,12 @@ nav .toggle i {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (max-width: 450px) {
+  .welcome-family {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 6%;
+  }
+}
 .welcome-family .welcome-img {
   position: relative;
 }
@@ -549,7 +617,7 @@ nav .toggle i {
     margin-left: 28%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .welcome-family .welcome-img .wel-img1 {
     width: 60%;
   }
@@ -566,7 +634,7 @@ nav .toggle i {
     left: 18%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .welcome-family .welcome-img .wel-img2 {
     width: 24%;
   }
@@ -621,6 +689,11 @@ nav .toggle i {
   padding-top: 38px;
   justify-content: space-between;
 }
+@media (min-width: 310px) and (max-width: 426px) {
+  .welcome-family .welcome-box .wel-box {
+    visibility: hidden;
+  }
+}
 .welcome-family .welcome-box .wel-box .wel-box1 {
   padding-top: 20px;
   margin: auto;
@@ -671,9 +744,19 @@ nav .toggle i {
     height: 190vh;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   #treatment .treatment-box {
     height: 290vh;
+  }
+}
+@media (max-width: 450px) {
+  #treatment .treatment-box {
+    height: 320vh;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  #treatment .treatment-box {
+    height: 366vh;
   }
 }
 #treatment .treatment-box .treatment-text {
@@ -728,7 +811,7 @@ nav .toggle i {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   #treatment .treatment-grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -823,6 +906,11 @@ nav .toggle i {
   text-align: center;
   margin: auto;
 }
+@media (max-width: 450px) {
+  #dentist .dentist-text {
+    margin-left: -10%;
+  }
+}
 #dentist .dentist-picture {
   width: 90%;
   display: grid;
@@ -839,9 +927,14 @@ nav .toggle i {
     row-gap: 34px;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   #dentist .dentist-picture {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  #dentist .dentist-picture {
+    margin-top: 18%;
   }
 }
 #dentist .dentist-picture .serve1 {
@@ -967,6 +1060,11 @@ nav .toggle i {
     width: 160%;
   }
 }
+@media (min-width: 310px) and (max-width: 426px) {
+  #appointment .appointment-form form input {
+    width: 150%;
+  }
+}
 #appointment .appointment-form form textarea {
   margin-top: 14%;
   min-height: 300px;
@@ -988,9 +1086,14 @@ nav .toggle i {
     width: 339%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   #appointment .appointment-form form textarea {
     width: 162%;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  #appointment .appointment-form form textarea {
+    width: 150%;
   }
 }
 #appointment .appointment-form textarea {
@@ -1020,10 +1123,22 @@ nav .toggle i {
     margin-left: -19em;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   #appointment .appointment-form .appo-submit {
     margin-top: 84%;
     margin-left: -16.8em;
+  }
+}
+@media (max-width: 450px) {
+  #appointment .appointment-form .appo-submit {
+    margin-top: 98%;
+    margin-left: -15.8em;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  #appointment .appointment-form .appo-submit {
+    margin-top: 136%;
+    margin-left: -15em;
   }
 }
 #appointment .appointment-form .appo-submit:hover {
@@ -1047,7 +1162,7 @@ nav .toggle i {
     height: 140vh;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   #gallery {
     height: 208vh;
   }
@@ -1107,7 +1222,7 @@ nav .toggle i {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   #gallery .gallery-pics .gallery-picbox {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1399,6 +1514,11 @@ nav .toggle i {
   margin-top: 8%;
   width: 100%;
 }
+@media (min-width: 310px) and (max-width: 426px) {
+  .testimonial {
+    height: 80vh;
+  }
+}
 .testimonial .test {
   font-size: 46px;
   padding-left: 10%;
@@ -1454,7 +1574,7 @@ nav .toggle i {
     gap: 8%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .testimonial .item {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1478,10 +1598,15 @@ nav .toggle i {
     margin-left: -4%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .testimonial .item .testi-img1 {
     width: 50%;
     margin-left: 24%;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  .testimonial .item .testi-img1 {
+    height: 16vh;
   }
 }
 .testimonial .item .testi-img {
@@ -1503,10 +1628,15 @@ nav .toggle i {
     margin-left: -2%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .testimonial .item .testi-img {
     width: 50%;
     margin-left: 24%;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  .testimonial .item .testi-img {
+    height: 16vh;
   }
 }
 .testimonial .item .testi-text {
@@ -1550,7 +1680,7 @@ nav .toggle i {
   line-height: 28px;
   color: rgba(0, 0, 0, 0.438);
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .testimonial .item .textbox .testimony-txt1 {
     margin-bottom: 20%;
   }
@@ -1584,15 +1714,21 @@ nav .toggle i {
     left: 46%;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 770px) {
   .testimonial .owl-nav {
     left: 39%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .testimonial .owl-nav {
     top: 34em;
     left: 40%;
+  }
+}
+@media (max-width: 450px) {
+  .testimonial .owl-nav {
+    width: 16%;
+    top: 36em;
   }
 }
 .testimonial .owl-nav span {
@@ -1626,12 +1762,12 @@ nav .toggle i {
     row-gap: 48px;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 770px) {
   .blog .blog-card {
     margin-bottom: 20%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .blog .blog-card {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1849,9 +1985,19 @@ nav .toggle i {
     margin-left: 39%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .request-appointment .re-appo .re-appobtn {
     margin-left: 34%;
+  }
+}
+@media (max-width: 450px) {
+  .request-appointment .re-appo .re-appobtn {
+    margin-left: 30%;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  .request-appointment .re-appo .re-appobtn {
+    margin-left: 26%;
   }
 }
 .request-appointment .re-appo .re-appobtn:hover {
@@ -1883,10 +2029,10 @@ nav .toggle i {
     margin-top: 12%;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .request-appointment .re-appo .re-appopics {
     width: 84vw;
-    height: 33vh;
+    height: 34vh;
     margin-top: 20%;
   }
 }
@@ -1900,9 +2046,14 @@ nav .toggle i {
     height: 40vh;
   }
 }
-@media (min-width: 550px) and (max-width: 769px) {
+@media (max-width: 550px) {
   .request-appointment .re-appo .re-appopics .appo-pics1 {
     height: 36vh;
+  }
+}
+@media (min-width: 310px) and (max-width: 426px) {
+  .request-appointment .re-appo .re-appopics .appo-pics1 {
+    height: 28vh;
   }
 }
 
@@ -1950,10 +2101,15 @@ footer .foot-box {
     row-gap: 10%;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 770px) {
   footer .foot-box {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 2%;
+  }
+}
+@media (max-width: 550px) {
+  footer .foot-box {
+    height: 120vh;
   }
 }
 footer .foot-box .foot-box1 {
