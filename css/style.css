@@ -14,6 +14,10 @@ html {
   scroll-behavior: smooth;
 }
 
+header {
+  position: relative;
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -2183,8 +2187,7 @@ footer .foot-box2 .foot-text2 .foot-txt2:hover {
   nav .menu-box {
     position: fixed;
     top: 5em;
-    right: 0 !important;
-    transform: translateX(100%);
+    right: -100%;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     height: auto;
     width: 156px;
@@ -2206,7 +2209,6 @@ footer .foot-box2 .foot-text2 .foot-txt2:hover {
     border-bottom: none;
   }
   nav .menu-box.active {
-    transform: translateX(0);
     right: 0;
     opacity: 1;
   }
