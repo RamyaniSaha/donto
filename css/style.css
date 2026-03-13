@@ -69,6 +69,11 @@ nav .box .scroll-progress {
   transition: width 0.2s ease-out;
   opacity: 0;
 }
+nav .logo a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
 nav .logo img {
   outline: none;
   border: none;
@@ -181,7 +186,9 @@ nav .dropdown .mobile-nav-link.active::after, nav .dropdown .mobile-nav-link:hov
 nav .dropdown:hover .mobile-nav-link {
   color: rgb(235, 99, 121);
 }
-
+nav {
+  /* Dropdown Arrow - Desktop */
+}
 nav .dropdown .fa-angle-down {
   font-size: 12px;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
