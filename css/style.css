@@ -181,9 +181,7 @@ nav .dropdown .mobile-nav-link.active::after, nav .dropdown .mobile-nav-link:hov
 nav .dropdown:hover .mobile-nav-link {
   color: rgb(235, 99, 121);
 }
-nav {
-  /* Dropdown Arrow - Desktop */
-}
+
 nav .dropdown .fa-angle-down {
   font-size: 12px;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
