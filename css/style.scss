@@ -288,7 +288,7 @@ nav{
     
 
    .drop-menu li{
-      min-width: 180px;
+      min-width: 179px;
       height: auto;
       padding: 6px 24px;
       list-style: none;
@@ -2469,9 +2469,10 @@ footer{
            transition:max-height .35s ease;
            width: 120px;
            opacity: 0;
+           border: 1px solid #fc5185;
         }
         .drop-menu li{
-         min-width: 0px;
+          min-width: 119px;
           transform:translateY(-10px);
          transition:.3s ease;
          opacity: 0;

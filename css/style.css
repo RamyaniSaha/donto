@@ -232,7 +232,7 @@ nav .drop-menu::before {
   border-left: 1px solid rgba(0, 0, 0, 0.15);
 }
 nav .drop-menu li {
-  min-width: 180px;
+  min-width: 179px;
   height: auto;
   padding: 6px 24px;
   list-style: none;
@@ -2183,9 +2183,10 @@ footer .foot-box2 .foot-text2 .foot-txt2:hover {
     transition: max-height 0.35s ease;
     width: 120px;
     opacity: 0;
+    border: 1px solid #fc5185;
   }
   nav .box .drop-menu li {
-    min-width: 0px;
+    min-width: 119px;
     transform: translateY(-10px);
     transition: 0.3s ease;
     opacity: 0;
