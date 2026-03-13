@@ -888,8 +888,27 @@
               $(this).removeClass('active');
            }
           );
+          
          });
   </script>
+
+  <script>
+$(document).ready(function(){
+
+$(".dropdown > a").click(function(e){
+
+let dropdown = $(this).parent();
+
+if($(window).width() <= 992){
+    e.preventDefault();
+    dropdown.toggleClass("active");
+}
+
+});
+
+});
+</script>
+
 
  <script>
   $(document).ready(function(){

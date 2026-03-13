@@ -191,10 +191,15 @@ nav .dropdown .fa-angle-down {
   top: 0.2em;
   color: #2d68a7;
 }
-nav .dropdown:hover .fa-angle-down {
+nav .dropdown.active .fa-angle-down {
   transform: rotate(180deg);
   color: rgb(235, 99, 121);
   align-items: center;
+}
+nav .dropdown.active .drop-menu {
+  opacity: 1;
+  transform: translateY(8px);
+  visibility: visible;
 }
 nav .drop-menu {
   display: flex;
@@ -225,11 +230,6 @@ nav .drop-menu::before {
   transform: rotate(45deg);
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   border-left: 1px solid rgba(0, 0, 0, 0.15);
-}
-nav .dropdown.active .drop-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(8px);
 }
 nav .drop-menu li {
   min-width: 180px;
@@ -2179,10 +2179,31 @@ footer .foot-box2 .foot-text2 .foot-txt2:hover {
 }
 @media only screen and (max-width: 1000px) {
   nav .box .drop-menu {
+    max-height: 0;
+    transition: max-height 0.35s ease;
     width: 120px;
+    opacity: 0;
   }
   nav .box .drop-menu li {
     min-width: 0px;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+  nav .box .dropdown.active .drop-menu li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  nav .box .dropdown.active .drop-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(8px);
+  }
+  nav .box .dropdown.active .drop-menu {
+    max-height: 200px;
+  }
+  nav .box .dropdown:active .fa-angle-down {
+    transform: rotate(180deg);
   }
   nav .menu-box {
     position: fixed;
