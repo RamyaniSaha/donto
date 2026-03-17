@@ -186,7 +186,9 @@ nav .dropdown .mobile-nav-link.active::after, nav .dropdown .mobile-nav-link:hov
 nav .dropdown:hover .mobile-nav-link {
   color: rgb(235, 99, 121);
 }
-
+nav {
+  /* Dropdown Arrow - Desktop */
+}
 nav .dropdown .fa-angle-down {
   font-size: 12px;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1956,13 +1958,13 @@ footer .foot-box {
   margin: 0 auto;
   width: 100%;
   height: auto;
-  padding: 100px 0 90px;
+  padding: 44px 0;
 }
 footer .foot-box .foot-box1 {
   color: white;
 }
 footer .foot-box .foot-box1 .foot-text {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 48px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
@@ -2004,7 +2006,7 @@ footer .foot-box .foot-box1 .f-2 li {
 footer .foot-box2 {
   background-color: #1259b0;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
   height: auto;
 }
 footer .foot-box2 .foot-text2 {
